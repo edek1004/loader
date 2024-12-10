@@ -29,6 +29,14 @@ local Whitelist = request({
 if Whitelist:lower():match("error", 1, true) then
     game:GetService("Players").LocalPlayer:Kick(Whitelist)
 else
-    local str = tick() - Start_runing
-    warn(Whitelist,"In:",tostring(math.floor(str) % (9e9 * 9e9))..string.format(".%09d", (str % 1) * 1000))
+    local tim = tick() - Start_runing
+    local str = Whitelist.." In: "..tostring(math.floor(tim) % (9e9 * 9e9))..string.format(".%09d", (tim % 1) * 1000)
+    local spc = ""
+
+    for i = 1, #str do
+        spc = spc.."-"
+    end
+    warn(spc)
+    warn(str)
+    warn(spc)
 end
