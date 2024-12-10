@@ -1,3 +1,10 @@
+
+if getgenv().checkwhitelist then
+   return
+else
+   getgenv().checkwhitelist = true
+end
+
 local HttpService = game:GetService("HttpService")
 local Start_runing = tick()
 
@@ -39,4 +46,5 @@ else
     warn(spc)
     warn(str)
     warn(spc)
+    getgenv().checkwhitelist = false
 end
