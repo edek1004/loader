@@ -25,7 +25,7 @@ local Userdata = HttpService:JSONEncode({["Key"] = getgenv().Key or "", ["Hwid"]
 
 
 local Whitelist = request({
-	Url = "https://pink-judith-43.tiiny.io/",
+	Url = "https://teal-patrica-87.tiiny.io/",
     Body = Userdata,
     Headers = {
         ["Content-Type"] = "application/json"
